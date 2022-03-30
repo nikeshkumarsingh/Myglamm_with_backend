@@ -1,6 +1,6 @@
 const express=require("express");
 const cors=require("cors");
-const productcontroller=require("./controller/Product.controller");
+const productcontroller=require("./controller/product.controller");
 const skincarecontroller=require("./controller/skincare.controller")
 
  const app=express();
