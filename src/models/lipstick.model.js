@@ -15,6 +15,7 @@ const lipstickSchema =new mongoose.Schema(
         Image5:{type:String,required:true},
     },{
         timestamps:true,
+        versionKey: false
     }
 )
 
