@@ -1,11 +1,11 @@
 const mongoose=require("mongoose");
 
-const userSchema=mongoose.Schema({
+const registrationSchema=mongoose.Schema({
     title:{type:String,required:true,unique:true},
     price:{type:Number,required:true}
 },{
     timestamps:true,
     versionKey:false,
 });
-const product=mongoose.model("product",productSchema)
-module.exports=product
+const Registration=mongoose.model("registration",registrationSchema)
+module.exports=Registration
