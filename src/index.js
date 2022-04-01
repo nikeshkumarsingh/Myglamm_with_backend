@@ -12,6 +12,7 @@ const { register, login } = require("./controller/auth.controller");
 const app = express();
 app.use(cors());
 app.use(express.json());
+
 app.use("/products", productcontroller);
 app.use("/makeups", makeupcontroller);
 app.use("/lipsticks", lipstickController);
