@@ -18,4 +18,5 @@ const lipstickSchema =new mongoose.Schema(
     }
 )
 
+
 module.exports=mongoose.model("lipstick",lipstickSchema)

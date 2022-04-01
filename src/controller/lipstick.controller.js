@@ -1,5 +1,6 @@
 const express = require("express");
-const lipstick = require("../models/lipsticks.model");
+const lipstick = require("../models/lipstick.model");
+
 
 const router = express.Router();
 router.get("", async (req, res) => {

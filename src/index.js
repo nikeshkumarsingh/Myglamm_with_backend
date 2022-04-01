@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/products", productcontroller);
 app.use("/makeups", makeupcontroller);
-app.use("/lipsticks", lipstickController);
+app.use("/lipstick", lipstickController);
 app.use("/haircare", haircareController);
 app.use("/skincares", skincarecontroller);
 app.use("/users", usersController);
