@@ -2,7 +2,7 @@ const express =require("express")
 const router=express.Router();
 const authenticate = require("../middlewares/authenticate")
 const Product=require("../models/products.model")
-router.post("", async(req,res)=>{
+router.post("", authenticate, async(req,res)=>{
 
     try {
         const product=await Product.create(req.body)
@@ -14,7 +14,7 @@ router.post("", async(req,res)=>{
         
     }  
 })
-router.get("", async (req, res) => {
+router.get("", authenticate, async (req, res) => {
     try{
         const product = await Product.find()
         return res.status(200).send(product)
