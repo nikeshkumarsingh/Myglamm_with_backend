@@ -6,7 +6,6 @@ const skincarecontroller = require("./controller/skincare.controller");
 const makeupcontroller = require("./controller/MAKEUP.controller");
 const lipstickController = require("./controller/lipstick.controller");
 const haircareController = require("./controller/haircare.Controller");
-
 const usersController = require("./controller/users.controllers");
 const registrationController = require("./controller/registration.controller ");
 const { register, login } = require("./controller/auth.controller");
