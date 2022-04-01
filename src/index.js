@@ -6,7 +6,6 @@ const makeupcontroller=require("./controller/MAKEUP.controller");
 
 const usersController = require("./controller/users.controllers");
 const registrationController = require("./controller/registration.controller ");
-const productsController = require("./controller/products.controller ");
 const {register,login}=require("./controller/auth.controller")
  const app=express();
  app.use(cors());
@@ -17,16 +16,7 @@ app.use("/users", usersController);
 app.post("/register",register)
 app.post("/login",login)
 app.use("/registration", registrationController)
- module.exports=app;
- 
  app.use("/makeups",makeupcontroller);
- 
-
-app.use("/users", usersController); 
-app.post("/register",register)
-app.post("/login",login)
-app.use("/products1", productsController)
-
 
 module.exports=app;
 
