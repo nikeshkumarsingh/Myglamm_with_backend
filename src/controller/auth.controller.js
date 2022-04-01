@@ -17,7 +17,7 @@ const register = async (req, res) => {
     user = await User.create(req.body);
 
     const token = genrateToken(user);
-    return res.status(200).send({ user, token });
+    return res.status(200).redirect("http://127.0.0.1:5501/start_pro/frontend/index.html");
   } catch (err) {
     res.status(400).send({ message: err.message });
   }
@@ -37,7 +37,7 @@ const login = async (req, res) => {
     }
 
     const token = genrateToken(user);
-    return res.status(200).send({ user, token });
+    return res.status(200).redirect("http://127.0.0.1:5501/start_pro/frontend/index.html");
   } catch (err) {
     res.status(400).send({ message: err.message });
   }

@@ -11,6 +11,11 @@ const usersController = require("./controller/users.controllers");
 const registrationController = require("./controller/registration.controller ");
 const { register, login } = require("./controller/auth.controller");
 const app = express();
+const bodyparser=require("body-parser")
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({
+    extended:true
+}))
 app.use(cors());
 app.use(express.json());
 
@@ -21,6 +26,7 @@ app.use("/lipsticks", lipstickController);
 
 
 app.use("/skincares", skincarecontroller);
+
 app.use("/users", usersController);
 app.post("/register", register);
 app.post("/login", login);
