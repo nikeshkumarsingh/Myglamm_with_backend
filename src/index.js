@@ -24,7 +24,7 @@ app.use("/products", productcontroller);
 app.use("/makeups", makeupcontroller);
 app.use("/haircare", haircareController);
 app.use("/lipsticks", lipstickController);
-app.use("/sanitizing",sanitizingcontroller)
+app.use("/sanitizingCare",sanitizingcontroller)
 
 
 app.use("/skincares", skincarecontroller);
