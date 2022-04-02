@@ -6,6 +6,7 @@ const skincarecontroller = require("./controller/skincare.controller");
 const makeupcontroller = require("./controller/MAKEUP.controller");
 const haircareController = require("./controller/haircare.Controller");
 const lipstickController = require("./controller/lipstick.controller");
+const sanitizingcontroller=require("./controller/sanitizing.controller")
 
 const usersController = require("./controller/users.controllers");
 const registrationController = require("./controller/registration.controller ");
@@ -23,6 +24,7 @@ app.use("/products", productcontroller);
 app.use("/makeups", makeupcontroller);
 app.use("/haircare", haircareController);
 app.use("/lipsticks", lipstickController);
+app.use("/sanitizing",sanitizingcontroller)
 
 
 app.use("/skincares", skincarecontroller);
