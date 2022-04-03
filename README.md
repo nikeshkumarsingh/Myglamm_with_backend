@@ -4,10 +4,10 @@ Unit 4 Project At Masai School.
 
 **Links for reference :**
 
-Front-end Repo Link :
+Frontend Repo Link :
 https://github.com/Vaibhav0702/Myglamm-with_Frontend.git
 
-Back-end Repo Link :
+Backend Repo Link :
 https://github.com/nikeshkumarsingh/Myglamm_with_backend.git
 
 Blog link : 
